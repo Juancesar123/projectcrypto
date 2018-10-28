@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RegisterPage } from './../register/register';
-import { HomePage } from './../home/home';
 
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the BroadcastPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,21 +10,16 @@ import { HomePage } from './../home/home';
 
 @IonicPage()
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+  selector: 'page-broadcast',
+  templateUrl: 'broadcast.html',
 })
-export class LoginPage {
+export class BroadcastPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  Login(){
-    this.navCtrl.setRoot(HomePage)
-  }
-  register(){
-    this.navCtrl.push(RegisterPage)
-  }
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    console.log('ionViewDidLoad BroadcastPage');
   }
 
 }
